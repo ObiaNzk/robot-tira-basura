@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Robot Tira Basura</string>
+
+    <!-- Robot selection -->
+    <string name="select_title">Elegí el robot</string>
+    <string name="select_subtitle">Conectate a un robot para supervisar la recolección.</string>
+    <string name="select_connect">Conectar</string>
+    <string name="select_connected">Conectado</string>
+    <string name="select_open">Abrir supervisión</string>
+    <string name="select_simulated_note">Robot simulado: no hay hardware ni red. Los datos son ficticios.</string>
+
+    <!-- Shell -->
+    <string name="tab_supervision">Supervisión</string>
+    <string name="tab_mission">Misión</string>
+    <string name="tab_alerts">Alertas</string>
+    <string name="tab_history">Historial</string>
+    <string name="tab_simulator">Simulador</string>
+    <string name="action_disconnect">Desconectar</string>
+    <string name="disconnect_title">¿Desconectarse del robot?</string>
+    <string name="disconnect_body">El robot sigue en su estado actual: desconectarse no lo detiene ni cancela la misión.</string>
+
+    <!-- Link -->
+    <string name="link_connected">Conectado</string>
+    <string name="link_stale">Datos antiguos</string>
+    <string name="link_lost">Sin conexión</string>
+    <string name="link_age">Actualizado hace %1$d s</string>
+    <string name="link_never">Sin datos todavía</string>
+    <string name="stale_banner">Sin datos nuevos hace %1$d s. Lo que ves puede no ser el estado actual; las órdenes pueden no llegar.</string>
+
+    <!-- States -->
+    <string name="state_idle">Inactivo</string>
+    <string name="state_charging">Cargando</string>
+    <string name="state_mission">En misión</string>
+    <string name="state_paused">Pausado</string>
+    <string name="state_stopped">Detenido</string>
+    <string name="state_waiting">Espera decisión</string>
+    <string name="state_returning">Regresando</string>
+
+    <!-- Steps -->
+    <string name="step_to_bags">Ir a las bolsas</string>
+    <string name="step_pick">Recoger bolsa</string>
+    <string name="step_to_bin">Ir al tacho</string>
+    <string name="step_lift_lid">Levantar tapa del tacho</string>
+    <string name="step_drop">Depositar bolsa</string>
+    <string name="step_lower_lid">Bajar tapa</string>
+    <string name="step_return">Volver al punto seguro</string>
+
+    <!-- Results -->
+    <string name="result_done">Completada</string>
+    <string name="result_cancelled">Cancelada</string>
+    <string name="result_aborted">Abortada (regreso)</string>
+    <string name="result_beside_bin">Bolsa junto al tacho</string>
+    <string name="result_running">En curso</string>
+
+    <!-- Supervision -->
+    <string name="sup_no_robot">No hay robot conectado.</string>
+    <string name="sup_mission_none">Sin misión activa. Escaneá los QR en la pestaña Misión.</string>
+    <string name="sup_mission_title">Misión %1$s → %2$s</string>
+    <string name="sup_progress">%1$d %%</string>
+    <string name="sup_telemetry">Telemetría</string>
+    <string name="sup_battery">Batería</string>
+    <string name="sup_signal">Señal</string>
+    <string name="sup_position">Ubicación</string>
+    <string name="sup_position_value">x %1$.1f m · y %2$.1f m</string>
+    <string name="sup_movement">Movimiento</string>
+    <string name="sup_movement_value">%1$.2f m/s · rumbo %2$d°</string>
+    <string name="sup_bags">Bolsas tiradas</string>
+    <string name="sup_payload">Carga en mano</string>
+    <string name="sup_payload_value">%1$.1f kg</string>
+    <string name="sup_bin">Llenado del tacho</string>
+    <string name="sup_alerts">Alertas sin reconocer</string>
+    <string name="sup_commands">Comandos</string>
+    <string name="sup_recent_commands">Últimas órdenes</string>
+    <string name="sup_no_commands">Todavía no enviaste órdenes.</string>
+    <string name="sup_stop_note">La detención desde la app es un comando de software. No reemplaza la parada de emergencia física del robot.</string>
+    <string name="sup_decision_obstacle">Hay un obstáculo en la ruta. ¿Qué hace el robot?</string>
+    <string name="sup_decision_bin_full">El tacho está lleno. ¿Qué hace el robot con la bolsa?</string>
+    <string name="sup_map">Mapa del sitio</string>
+    <string name="map_description">Mapa: robot en x %1$.1f m, y %2$.1f m.</string>
+
+    <!-- Commands -->
+    <string name="cmd_start">Iniciar misión</string>
+    <string name="cmd_pause">Pausar</string>
+    <string name="cmd_resume">Reanudar</string>
+    <string name="cmd_cancel">Cancelar misión</string>
+    <string name="cmd_return">Regresar a punto seguro</string>
+    <string name="cmd_stop">Detención operativa</string>
+    <string name="cmd_ack">Reconocer alerta</string>
+    <string name="cmd_replan">Rodear obstáculo</string>
+    <string name="cmd_leave">Dejar junto al tacho</string>
+    <string name="cmd_retry_bin">Reintentar (tacho vaciado)</string>
+
+    <string name="status_pending">Pendiente</string>
+    <string name="status_confirmed">Confirmada</string>
+    <string name="status_rejected">Rechazada</string>
+    <string name="status_no_answer">Sin respuesta</string>
+
+    <string name="disabled_no_link">Sin conexión con el robot</string>
+    <string name="disabled_no_data">Sin datos del robot</string>
+    <string name="disabled_state">No disponible en este estado</string>
+    <string name="disabled_qr">Escaneá el QR de las bolsas y el del tacho</string>
+    <string name="disabled_battery">Batería insuficiente (mínimo 25 %)</string>
+    <string name="disabled_alert">Hay una alerta crítica sin reconocer</string>
+    <string name="disabled_at_base">Ya está en el punto seguro</string>
+    <string name="disabled_pending">Esperando respuesta de la orden anterior</string>
+
+    <string name="reject_state">el estado del robot no lo permite</string>
+    <string name="reject_battery">batería insuficiente</string>
+    <string name="reject_no_route">no hay ruta posible</string>
+    <string name="reject_alert">hay una alerta crítica sin reconocer</string>
+    <string name="reject_no_alert">la alerta ya no existe</string>
+    <string name="reject_simulated">rechazo forzado desde el simulador</string>
+
+    <string name="confirm_title_cancel">¿Cancelar la misión?</string>
+    <string name="confirm_body_cancel">El robot se queda donde está. Si lleva una bolsa, la sigue sosteniendo.</string>
+    <string name="confirm_title_stop">¿Detener el robot?</string>
+    <string name="confirm_body_stop">El robot se queda quieto hasta que lo reanudes. No es una parada de emergencia física.</string>
+    <string name="confirm_title_return">¿Regresar al punto seguro?</string>
+    <string name="confirm_body_return">Si hay una misión en curso, termina como abortada.</string>
+    <string name="confirm_title_leave">¿Dejar la bolsa junto al tacho?</string>
+    <string name="confirm_body_leave">La bolsa queda en el piso al lado del tacho. Avisá al personal de limpieza.</string>
+    <string name="confirm_title_start">¿Iniciar la misión?</string>
+    <string name="confirm_body_start">Verificá que el recorrido esté despejado de personas.</string>
+    <string name="confirm_yes">Confirmar</string>
+    <string name="confirm_no">Volver</string>
+
+    <!-- Mission setup -->
+    <string name="mission_title">Nueva misión</string>
+    <string name="mission_bags">Bolsas</string>
+    <string name="mission_bin">Tacho</string>
+    <string name="mission_missing">Sin escanear</string>
+    <string name="mission_target">%1$s · celda (%2$d, %3$d)</string>
+    <string name="mission_scan">Escanear QR</string>
+    <string name="mission_stop_scan">Cerrar cámara</string>
+    <string name="mission_simulate">Simular lectura (sin cámara)</string>
+    <string name="mission_clear">Borrar</string>
+    <string name="mission_route">Ruta planificada</string>
+    <string name="mission_route_value">%1$.1f m · unos %2$d s</string>
+    <string name="mission_unreachable">No hay camino hasta: %1$s</string>
+    <string name="mission_macro">Macro</string>
+    <string name="mission_scan_hint">Apuntá a un QR de bolsas o de tacho</string>
+    <string name="mission_read_bags">Bolsas %1$s leídas</string>
+    <string name="mission_read_bin">Tacho %1$s leído</string>
+    <string name="mission_invalid_format">QR con formato inválido</string>
+    <string name="mission_invalid_out">El QR apunta fuera del mapa</string>
+    <string name="mission_invalid_obstacle">El QR apunta a un lugar bloqueado</string>
+    <string name="mission_no_permission">Sin permiso de cámara. Podés simular la lectura.</string>
+    <string name="mission_starting">Enviando orden…</string>
+    <string name="mission_rejected">El robot rechazó la misión: %1$s</string>
+    <string name="mission_no_answer">El robot no respondió. Revisá la supervisión antes de reintentar.</string>
+    <string name="mission_privacy">La cámara solo lee códigos QR; no se guardan imágenes.</string>
+
+    <!-- Alerts -->
+    <string name="alerts_empty">No hay alertas.</string>
+    <string name="alert_low_battery">Batería baja</string>
+    <string name="alert_critical_battery">Batería crítica: el robot se detuvo</string>
+    <string name="alert_obstacle">Obstáculo en la ruta</string>
+    <string name="alert_bin_full">Tacho lleno</string>
+    <string name="alert_person">Persona cerca: velocidad reducida</string>
+    <string name="alert_acknowledged">Reconocida</string>
+    <string name="alert_info">Información</string>
+    <string name="alert_warning">Advertencia</string>
+    <string name="alert_critical">Crítica</string>
+
+    <!-- History -->
+    <string name="history_missions">Misiones</string>
+    <string name="history_events">Eventos</string>
+    <string name="history_empty">Todavía no hay registros.</string>
+    <string name="history_clear">Borrar historial</string>
+    <string name="history_clear_title">¿Borrar el historial?</string>
+    <string name="history_clear_body">Se eliminan las misiones y eventos guardados en este teléfono.</string>
+    <string name="history_mission_line">%1$s → %2$s · %3$.1f m</string>
+
+    <!-- Simulator -->
+    <string name="sim_title">Simulador (docente / pruebas)</string>
+    <string name="sim_note">Fuerza situaciones para probar la HMI. No existe en un robot real.</string>
+    <string name="sim_link">Enlace con el robot</string>
+    <string name="sim_drop">Perder la próxima respuesta</string>
+    <string name="sim_reject">Rechazar la próxima orden</string>
+    <string name="sim_obstacle">Poner obstáculo adelante</string>
+    <string name="sim_clear_obstacles">Quitar obstáculos</string>
+    <string name="sim_bin_full">Tacho lleno</string>
+    <string name="sim_person">Persona cerca del robot</string>
+    <string name="sim_battery">Fijar batería</string>
+    <string name="sim_battery_value">%1$d %%</string>
+    <string name="sim_done">Listo</string>
+    <string name="sim_obstacle_failed">El robot no está navegando</string>
+    <string name="sim_not_connected">Conectate a un robot primero.</string>
+</resources>
